@@ -123,8 +123,8 @@ pip install -r requirements.txt
 ```
 ├── README.md
 ├── requirements.txt
-├── unet.ipynb
-├── unetplusplus.ipynb
+├── Water_body-MAIN-Unet.ipynb
+├── Water_body-MAIN_Unet_Plus_plus.ipynb
 ├── images/
 │   ├── unet_accuracy.png
 │   └── unetpp_accuracy.png
