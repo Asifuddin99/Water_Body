@@ -90,15 +90,33 @@ These enhancements help improve segmentation performance and boundary detection.
 
 ---
 
+## Sample Segmentation Results
+
+### U-Net Predictions
+
+The following examples show the original satellite image, corresponding ground truth mask, and the mask predicted by the U-Net model.
+
+![U-Net Predictions](images/unet_predictions.png)
+
+### U-Net++ Predictions
+
+The following examples show the original satellite image, corresponding ground truth mask, and the mask predicted by the U-Net++ model.
+
+![U-Net++ Predictions](images/unetpp_predictions.png)
+
+---
+
 ## Analysis
 
-Although U-Net achieved a higher training accuracy of **95.40%**, U-Net++ demonstrated significantly better segmentation performance based on Mean IoU.
+Both U-Net and U-Net++ successfully segmented water bodies from satellite imagery.
 
-The validation Mean IoU increased from **0.4476** for U-Net to **0.7724** for U-Net++, indicating better overlap between predicted and ground-truth masks.
+While U-Net achieved a higher training accuracy of 95.40%, U-Net++ achieved substantially higher Mean IoU scores on both the training and validation datasets. The validation Mean IoU improved from 0.4476 for U-Net to 0.7724 for U-Net++, indicating a much stronger overlap between the predicted masks and the ground truth masks.
 
-Additionally, U-Net++ showed more consistent training and validation performance, suggesting improved generalization on unseen data.
+The training and validation accuracy curves show that U-Net++ maintained more consistent performance throughout training, suggesting better generalization on unseen data.
 
-Overall, **U-Net++ outperformed U-Net for water body segmentation in this study**.
+Visual inspection of the segmentation results further confirms that U-Net++ produced masks that more closely matched the actual shapes and boundaries of water bodies.
+
+Based on both the quantitative metrics and qualitative results, U-Net++ outperformed U-Net for satellite water body segmentation in this study.
 
 ---
 
