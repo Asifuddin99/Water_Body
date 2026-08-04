@@ -144,6 +144,8 @@ pip install -r requirements.txt
 ├── Water_body-MAIN-Unet.ipynb
 ├── Water_body-MAIN_Unet_Plus_plus.ipynb
 ├── images/
+|   ├── unet_predictions.png
+|   ├── unetpp_predictions.png
 │   ├── unet_accuracy.png
 │   └── unetpp_accuracy.png
 ```
